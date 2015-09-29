@@ -1,6 +1,3 @@
-require 'httparty'
-require 'byebug'
-
 class Profile
 
   attr_reader :username
@@ -16,11 +13,8 @@ class Profile
     HTTParty.get("https://api.github.com/users/#{@username}?client_id=#{key}&client_secret=#{key2}")
   end
 
-  def username
-    @response[users]
+  def name
+    @response["name"]
   end
 
 end
-
-
-GET /users/:username

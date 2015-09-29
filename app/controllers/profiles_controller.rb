@@ -3,5 +3,6 @@ class ProfilesController < ApplicationController
   end
 
   def profile
+    @user = Profile.new(params[:username])
   end
 end

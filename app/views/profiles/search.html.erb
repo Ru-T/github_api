@@ -2,8 +2,8 @@
 
 <%= form_tag profiles_profile_path do %>
 
-  <input></input>
+  <%=text_field_tag :username %>
 
-  <%=submit_tag"Show profile!", {id: "thebutton"} %>
+  <%=submit_tag "Show profile!", {id: "thebutton"} %>
 
 <% end %>
