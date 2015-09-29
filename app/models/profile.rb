@@ -48,6 +48,3 @@ class Profile
   end
 
 end
-
-
- #.strftime("%A, %B %e %I:%M %p")

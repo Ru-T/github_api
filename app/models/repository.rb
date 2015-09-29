@@ -15,7 +15,7 @@ class Repository
     # HTTParty.get("?client_id=#{key}&client_secret=#{key2}")
   end
 
-  def repository_name
+  def repository_name(item)
     repositories = []
     @response.each_index do |item|
       repositories << @response[item]["name"]
@@ -23,10 +23,18 @@ class Repository
     repositories
   end
 
-  def repository_description
+  def repository_description(item)
     repositories = []
     @response.each_index do |item|
       repositories << @response[item]["description"]
+    end
+    repositories
+  end
+
+  def repository_details
+    repositories = {}
+    @response.each_index do |item|
+      repositories[repository_name(item)] = repository_description(item)
     end
     repositories
   end
@@ -40,3 +48,13 @@ class Repository
   end
 
 end
+
+#
+#
+#
+# repositories = @response.repository_name #now an array with all repo names
+# repository_details = {} #empty hash
+# repositories.each do |r| #take each rep from my repositories array
+#   repository_details[r] = @response[r]["description"] #make the repo name the key in a hash, make the description the value
+# end
+# recommendation_concerts # return the new hash!! YAY!!!!!!
