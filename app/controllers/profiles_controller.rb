@@ -4,5 +4,6 @@ class ProfilesController < ApplicationController
 
   def profile
     @user = Profile.new(params[:username])
+    @repository = Repository.new(params[:username])
   end
 end
