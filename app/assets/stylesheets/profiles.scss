@@ -12,6 +12,8 @@ h1 {
   font-size: 26px;
   line-height: 30px;
   text-overflow: ellipsis;
+  margin-top: 5px;
+  line-height: 1;
 }
 
 h3 {
@@ -20,20 +22,49 @@ h3 {
   font-weight: 300;
   line-height: 24px;
   color: #666;
+  display: block;
+  text-overflow: ellipsis;
+  margin-top: 5px;
+  line-height: 1;
 }
 
 h4 {
   width: 100%;
   padding: 2px 0 2px 24px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   overflow-x: hidden;
   white-space: nowrap;
   font-size: 14px;
   font-weight: normal;
   text-overflow: ellipsis;
+  border-top: 1px solid #eee;
 }
 
-#social {
+h5 {
   font-size: 28px;
   font-weight: bold;
   line-height: 1;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  display: block;
+}
+
+h6 {
+  font-size: 11px;
+  color: #767676;
+}
+
+.left-column {
+  width: 25%;
+  float: left;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.right-column {
+  width: 70%;
+  float: right;
+  padding-right: 10px;
+  padding-left: 10px;
 }

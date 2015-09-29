@@ -15,20 +15,28 @@ class Repository
     # HTTParty.get("?client_id=#{key}&client_secret=#{key2}")
   end
 
-  def repository_name(item)
-    repositories = []
-    @response.each_index do |item|
-      repositories << @response[item]["name"]
-    end
-    repositories
+  # def repository_name(item)
+  #   repositories = []
+  #   @response.each_index do |item|
+  #     repositories << @response[item]["name"]
+  #   end
+  #   repositories
+  # end
+  #
+  # def repository_description(item)
+  #   repositories = []
+  #   @response.each_index do |item|
+  #     repositories << @response[item]["description"]
+  #   end
+  #   repositories
+  # end
+
+  def repository_name (item)
+    @response[item]["name"]
   end
 
-  def repository_description(item)
-    repositories = []
-    @response.each_index do |item|
-      repositories << @response[item]["description"]
-    end
-    repositories
+  def repository_description (item)
+    @response[item]["description"]
   end
 
   def repository_details

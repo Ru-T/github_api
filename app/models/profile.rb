@@ -32,7 +32,7 @@ class Profile
   end
 
   def joined_at
-    @response["created_at"]
+    @response["created_at"]#.strftime("%A, %B %e %I:%M %p").to_i
   end
 
   def followers

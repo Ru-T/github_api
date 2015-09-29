@@ -1,13 +1,23 @@
-<%= image_tag @user.avatar, {id: "avatar"}%>
+<div class="left-column">
+  <%= image_tag @user.avatar, {id: "avatar"}%>
 
-<h1><%= @user.name %></h1>
-<h3><%= @user.username %></h3>
+  <h1><%= @user.name %></h1>
+  <div><h3><%= @user.username %></h3></div>
 
-<h4><%= @user.company %></h4>
-<h4><%= @user.location %></h4>
-<h4>Joined on <%= @user.joined_at%></h4>
+  <h4><%= @user.company %>
+  <div><%= @user.location %></div>
+  Joined on <%= @user.joined_at%></h4>
 
-<p><%= @user.followers%> Followers <%= @user.following%> Following</p>
+  <h5><%= @user.followers%></h5>
+  <h6> Followers</h6>
+  <h5><%= @user.following%></h5>
+  <h6> Following</h6>
+</div>
 
-<p><%= @repository.repository_details %></p>
+<div class="right-column">
+
+<p><%= @repository.repository_details%></p>
+
 <p><%= @repository.repository_updated_at %></p>
+
+</div>
