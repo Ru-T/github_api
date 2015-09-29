@@ -19,6 +19,10 @@ class Profile
     @response["name"]
   end
 
+  def avatar
+    @response["avatar_url"]
+  end
+
   def company
     @response["company"]
   end

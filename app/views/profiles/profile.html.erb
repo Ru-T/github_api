@@ -1,5 +1,7 @@
 <h1>Profile</h1>
 
+<%= image_tag @user.avatar %>
+
 <p><%= @user.name %></p>
 <p><%= @user.username %></p>
 
@@ -9,3 +11,4 @@
 <p><%= @user.joined_at%></p>
 
 <p><%= @user.followers%></p>
+<p><%= @user.following%></p>
