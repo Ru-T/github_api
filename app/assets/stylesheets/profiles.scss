@@ -4,4 +4,36 @@
 
 #avatar {
   height: 230px;
+  border-radius: 6px;
+}
+
+h1 {
+  font-family: Helvetica;
+  font-size: 26px;
+  line-height: 30px;
+  text-overflow: ellipsis;
+}
+
+h3 {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 24px;
+  color: #666;
+}
+
+h4 {
+  width: 100%;
+  padding: 2px 0 2px 24px;
+  overflow-x: hidden;
+  white-space: nowrap;
+  font-size: 14px;
+  font-weight: normal;
+  text-overflow: ellipsis;
+}
+
+#social {
+  font-size: 28px;
+  font-weight: bold;
+  line-height: 1;
 }

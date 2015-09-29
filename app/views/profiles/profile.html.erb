@@ -1,14 +1,10 @@
-<h1>Profile</h1>
-
 <%= image_tag @user.avatar, {id: "avatar"}%>
 
-<p><%= @user.name %></p>
-<p><%= @user.username %></p>
+<h1><%= @user.name %></h1>
+<h3><%= @user.username %></h3>
 
-<p><%= @user.company %></p>
-<p><%= @user.location %></p>
+<h4><%= @user.company %></h4>
+<h4><%= @user.location %></h4>
+<h4>Joined on <%= @user.joined_at%></h4>
 
-<p><%= @user.joined_at%></p>
-
-<p><%= @user.followers%></p>
-<p><%= @user.following%></p>
+<p><%= @user.followers%> Followers <%= @user.following%> Following</p>
