@@ -16,3 +16,7 @@ puts "The user's name is #{api.name}."
 # api.venues_all.each do |k, v|
 #   puts "#{k} in #{v}"
 # end
+
+
+auth = {:username => "Ru-T", :password => "1914ba50c0a120f68c5bd7ca6411d82f129fdbc0"}
+response = HTTParty.get("", :basic_auth => auth)

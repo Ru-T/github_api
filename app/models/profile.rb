@@ -8,9 +8,11 @@ class Profile
   end
 
   private def get_response
-    key = ENV['GITHUB_CLIENT_ID']
-    key2 = ENV['GITHUB_CLIENT_SECRET']
-    HTTParty.get("https://api.github.com/users/#{@username}?client_id=#{key}&client_secret=#{key2}")
+    auth = {:username => "Ru-T", :password => ENV['GITHUB_TOKEN']}
+    @response = HTTParty.get("https://api.github.com/users/#{@username}", :basic_auth => auth)
+    # key = ENV['GITHUB_CLIENT_ID']
+    # key2 = ENV['GITHUB_CLIENT_SECRET']
+    # HTTParty.get("?client_id=#{key}&client_secret=#{key2}")
   end
 
   def name
