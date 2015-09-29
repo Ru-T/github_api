@@ -47,4 +47,8 @@ class Profile
     @response["followers_url"]
   end
 
+  def following_link
+    @response["following_url"]
+  end
+
 end

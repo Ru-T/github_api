@@ -30,7 +30,6 @@ h3 {
 
 h4 {
   width: 100%;
-  padding: 2px 0 2px 24px;
   padding-top: 15px;
   padding-bottom: 15px;
   overflow-x: hidden;
@@ -41,18 +40,21 @@ h4 {
   border-top: 1px solid #eee;
 }
 
-h5 {
+#top {
   font-size: 28px;
   font-weight: bold;
   line-height: 1;
   border-top: 1px solid #eee;
-  border-bottom: 1px solid #eee;
   display: block;
+  text-align: center;
+  padding: 10px;
 }
 
-h6 {
+#bottom {
   font-size: 11px;
   color: #767676;
+  text-align: center;
+  border-bottom: 1px solid #eee;
 }
 
 .left-column {
@@ -67,4 +69,56 @@ h6 {
   float: right;
   padding-right: 10px;
   padding-left: 10px;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+#container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1000px;
+}
+
+#social {
+  float:left;
+}
+
+#repo {
+  font-size: 20px;
+  line-height: 1.2;
+  color: #4078c0;
+}
+
+#details {
+  max-width: 550px;
+  margin-top: 8px;
+  margin-bottom: 0;
+  font-size: 14px;
+  color: #666;
+  border-bottom: 1px solid #eee;
+  padding: 10px;
+}
+
+#tab {
+  font-size: 14px;
+  line-height: 20px;
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.search {
+  width: 275px;
+  height: 40px;
+  padding: 7px 8px;
+  color: #333;
+  vertical-align: middle;
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-position: right 8px center;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  outline: none;
+  box-shadow: inset 0 1px 2px rgba(0,0,0,0.075);
 }

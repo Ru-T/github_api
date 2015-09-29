@@ -47,6 +47,10 @@ class Repository
     repositories
   end
 
+  def repository_url (item)
+    @response[item]["git_url"]
+  end  
+
   def repository_updated_at
     repositories = []
     @response.each_index do |item|

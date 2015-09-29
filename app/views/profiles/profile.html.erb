@@ -1,23 +1,48 @@
-<div class="left-column">
-  <%= image_tag @user.avatar, {id: "avatar"}%>
+<div id="container">
 
-  <h1><%= @user.name %></h1>
-  <div><h3><%= @user.username %></h3></div>
+  <div class="left-column">
+    <%= image_tag @user.avatar, {id: "avatar"}%>
 
-  <h4><%= @user.company %>
-  <div><%= @user.location %></div>
-  Joined on <%= @user.joined_at%></h4>
+    <h1><%= @user.name %></h1>
 
-  <h5><%= @user.followers%></h5>
-  <h6> Followers</h6>
-  <h5><%= @user.following%></h5>
-  <h6> Following</h6>
+    <div><h3><%= @user.username %></h3></div>
+
+    <h4><span class="octicon octicon-organization"></span>
+      <%=  @user.company %>
+    <div><span class="octicon octicon-location"></span>
+      <%=  @user.location %></div>
+    <span class="octicon octicon-clock"></span>
+      Joined on <%=  @user.joined_at%></h4>
+
+    <div id="social">
+      <div id="top"><a href= <%= @user.followers_link %>> <%= @user.followers%></a></div>
+      <div id="bottom"> Followers</div></div>
+      <div id="social"><div id ="top"><a href= <%= @user.following_link %>><%= @user.following%></a></div>
+      <div id="bottom"> Following</div>
+  </div>
+
 </div>
 
 <div class="right-column">
 
-<p><%= @repository.repository_details%></p>
+  <div id="tab"><span class="octicon octicon-repo"></span> Repositories</div>
+  </br>
+  <input type="text" id="search"></input><button>Search</button>
+  </br>
+  </br>
+  </br>
+  <div id="repo"><a href= <%= @repository.repository_url(0) %>> <%= @repository.repository_name(0)%></a></div>
+  <div id="details"><%= @repository.repository_description(0)%></div>
 
-<p><%= @repository.repository_updated_at %></p>
+  <div id="repo"><a href= <%= @repository.repository_url(1) %>> <%= @repository.repository_name(1)%></a></div>
+  <div id="details"><%= @repository.repository_description(1)%></div>
+
+  <div id="repo"><a href= <%= @repository.repository_url(2) %>> <%= @repository.repository_name(2)%></a></div>
+  <div id="details"><%= @repository.repository_description(2)%></div>
+
+
+
+  <p><%= @repository.repository_details %></p>
+  <p><%= @repository.repository_updated_at %></p>
 
 </div>
