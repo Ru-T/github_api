@@ -17,4 +17,27 @@ class Profile
     @response["name"]
   end
 
+  def company
+    @response["company"]
+  end
+
+  def location
+    @response["location"]
+  end
+
+  def joined_at
+    @response["created_at"]
+  end
+
+  def followers
+    @response["followers"]
+  end
+
+  def following
+    @response["following"]
+  end
+
 end
+
+
+ #.strftime("%A, %B %e %I:%M %p")
