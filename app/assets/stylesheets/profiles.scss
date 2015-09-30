@@ -5,6 +5,7 @@
 #avatar {
   height: 230px;
   border-radius: 6px;
+  margin-top: 10px;
 }
 
 h1 {
@@ -127,4 +128,32 @@ button {
   color: #333;
   white-space: nowrap;
   vertical-align: middle;
+}
+
+#organization {
+  padding-top: 10px;
+  font-size: 16px;
+  text-align: left;
+  weight: bold;
+}
+
+.top-nav {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  min-width: 1000px;
+  background-color: #f5f5f5;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.mega-octicon octicon-mark-github {
+  padding-left: 5px;
+}
+
+#search2 {
+  width: 320px;
+  height: 16px;
+  padding: 7px 8px;
+  color: #333;
+  font-size: 12px;
+  margin: 5px;
 }

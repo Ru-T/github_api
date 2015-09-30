@@ -1,5 +1,13 @@
 <div id="container">
 
+  <div class="top-nav">
+    <span class="mega-octicon octicon-mark-github"></span>
+    <input type="text" id="search2" placeholder="Search Github"></input>
+    Pull Requests &nbsp;&nbsp;&nbsp;Issues&nbsp;&nbsp;&nbsp; Gist
+
+
+  </div>
+
   <div class="left-column">
     <%= image_tag @user.avatar, {id: "avatar"}%>
 
@@ -19,6 +27,9 @@
       <div id="bottom"> Followers</div></div>
       <div id="social"><div id ="top"><a href= <%= @user.following_link %>><%= @user.following%></a></div>
       <div id="bottom"> Following</div>
+
+    <p id="organization">Organizations</p>
+
   </div>
 
 </div>
@@ -27,7 +38,7 @@
 
   <div id="tab"><span class="octicon octicon-repo"></span> Repositories</div>
   </br>
-  <input type="text" id="search" placeholder="Find a repository..."></input><button>Search</button>
+  <input type="text" id="search" placeholder="Find a repository..."></input><button>Search</button> 
   </br>
   </br>
   </br>

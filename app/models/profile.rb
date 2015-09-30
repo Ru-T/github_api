@@ -10,9 +10,6 @@ class Profile
   private def get_response
     auth = {:username => "Ru-T", :password => ENV['GITHUB_TOKEN']}
     @response = HTTParty.get("https://api.github.com/users/#{@username}", :basic_auth => auth)
-    # key = ENV['GITHUB_CLIENT_ID']
-    # key2 = ENV['GITHUB_CLIENT_SECRET']
-    # HTTParty.get("?client_id=#{key}&client_secret=#{key2}")
   end
 
   def name
@@ -32,7 +29,7 @@ class Profile
   end
 
   def joined_at
-    @response["created_at"]#.strftime("%A, %B %e %I:%M %p").to_i
+    @response["created_at"]
   end
 
   def followers
